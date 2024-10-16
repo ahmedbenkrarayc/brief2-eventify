@@ -3,82 +3,6 @@
     padding: 0;
 }
 
-.header{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('./../images/headerbg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
-.headerbg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom right, rgba(237, 70, 144, 0.88), rgba(85, 34, 204, 0.88), rgba(85, 34, 204, 0.88));
-    top: 0;
-    left: 0;
-}
-
-.headerbody{
-    display:flex;
-    margin-top: 80px;
-}
-
-.headerbody .left{
-    flex: 1;
-    padding-left: 40px;
-}
-
-.headerbody .right{
-    flex: 1;
-    color: white;
-    padding-left: 40px;
-}
-
-.headerbody img{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-}
-
-.headerbody h1, .headerbody p{
-    max-width: 360px;
-}
-
-.headerbody h1{
-    margin-top: 24px;
-}
-
-.headerbody p{
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 5px;
-}
-
-.btn-container{
-    display: flex;
-    margin-top: 25px;
-}
-
-.btn-container a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    padding: 10px 28px;
-    border: 1.5px solid white;
-    border-radius: 20px;
-}
-
-.btn-container a:first-child{
-    margin-right: 6px;
-    border-color: #F5167E;
-    background: #F5167E;
-}
-
 /* Search box */
 
 .searchbox{
@@ -126,8 +50,192 @@
 
 .event-search{
     display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 85%;
+    margin-inline: auto;
 }
 
 .event-search h1{
-    
+    color: #242565;
+}
+
+.selectsearch{
+    display: flex;
+}
+
+.selectsearch select{
+    display: block;
+    color: #1D275F;
+    border: none;
+    outline: none;
+    background: #F2F4FF;
+    padding: 8px 16px;
+    margin-inline: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cards-container{
+    width:85%;
+    margin-top: 80px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.card{
+    height: fit-content;
+    background: white;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 18px 47px #7773aa15;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-info{
+    display: flex;
+    padding-inline: 20px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+}
+
+.date{
+    text-align: center;
+}
+
+.date span{
+    display: block;
+}
+
+.month{
+    font-weight: 600;
+    color: #3D37F1;
+    font-size: 12px;
+}
+
+.day{
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: -4px;
+}
+
+.title{
+    margin-left: 20px;
+}
+
+.title h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title p{
+    margin-top: 4px;
+    font-size: 13px;
+    color: #6A6A6A;
+}
+
+.load{
+    display: block;
+    color: #3D37F1;
+    background: transparent;
+    font-size: 13px;
+    padding: 10px 28px;
+    border: 1.5px solid #3D37F1;
+    border-radius: 20px;
+    margin-inline: auto;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.join{
+    width: 100%;
+    background: #EEE1FF;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.join h1{
+    color: #242565;
+    font-size: 35px;
+}
+
+.join p{
+    color: #6A6A6A;
+    font-size: 15px;
+    max-width: 540px;
+    margin-inline: auto;
+}
+
+.partners{
+    width: 85%;
+    margin-top: 100px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.partners img{
+    width: 120px;
+    object-fit: cover;
+}
+
+/* blooooog section */
+
+.blog{
+    width: 85%;
+    margin-top: 100px;
+    margin-inline: auto;
+    text-align: center;    
+}
+
+.blog .cards-container{
+    margin-top: 50px;
+}
+
+.blog > h1{
+    color: #242565;
+    font-size: 30px;
+}
+
+.blog > p{
+    color: #6A6A6A;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.blogcard img{
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.blogcard h1{
+    color: #242565;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-inline: 6px;
+}
+
+.blogcard p{
+    text-align: left;
+    padding-inline: 6px;
+    font-size: 12px;
+    color: #A5A5A5;
+    margin-top: 10px;
+    line-height: 20px;
 }
