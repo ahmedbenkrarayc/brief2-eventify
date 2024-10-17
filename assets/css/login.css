@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+}
+
+.right{
+    background-image: url('./../images/logincover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.left{
+    padding-top: 30px;
+}
+
+.logo{
+    width: 120px;
+    object-fit: cover;
+}
+
+h1{
+    margin-top: 45px;
+    text-align: center;
+    color: #242565;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.description{
+    text-align: center;
+    color: #6A6A6A;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form{
+    display: block;
+    margin-top: 40px;
+}
+
+.inputbox{
+    margin-top: 15px;
+}
+
+.inputbox label{
+    font-size: 14px;
+    color: #242565;
+    font-weight: 500;
+}
+
+.inputbox input{
+    display: block;
+    outline: none;
+    border: 1.5px solid #D9DCDF;
+    width: calc(100% - 32px);
+    margin-top: 10px;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+.inputbox input::placeholder{
+    color: #242565;
+}
+
+.form{
+    padding-inline: 60px;
+}
+
+.forgot{
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #848B91;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-left: auto;
+}
+
+.login{
+    width: 100%;
+    display: block;
+    padding: 10px 16px;
+    color: white;
+    background: #242565;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.notregistered{
+    margin-top: 25px;
+    text-align: center;
+    color: #6A6A6A;
+    font-size: 14px;
+}
+
+.notregistered a{
+    color: #242565;
+    text-decoration: none;
+}
