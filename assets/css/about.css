@@ -54,3 +54,83 @@
     font-size: 30px;
     text-align: center;
 }
+
+.speakers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    margin-inline: auto;
+    padding-inline: 100px;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 80px;
+}
+
+.speaker img{
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+    cursor: pointer;
+}
+
+.speaker h1{
+    font-size: 15px;
+    font-weight: 500;
+    color: #242565;
+    padding-inline: 12px;
+    text-align: left;
+}
+
+.speaker p{
+    font-size: 13px;
+    color: #242565;
+    padding-inline: 12px;
+}
+
+.speaker{
+    position: relative;
+    overflow: hidden;
+}
+
+.speaker:hover h1{
+    color: white;
+}
+
+.speaker:hover p{
+    color: white;
+}
+
+.namerolehover{
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    background: #24256575;
+    top: 0;
+    left: -100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namerolehover h1, .namerolehover p{
+    color:white;
+    text-align: center;
+}
+
+.speaker:hover .namerolehover{
+    left: 0;
+    transition: left 600ms ease-in-out;
+}
+
+.load{
+    display: block;
+    outline: none;
+    border: none;
+    background: #242565;
+    color: white;
+    padding: 10px 30px;
+    margin-inline: auto;
+    margin-top: 80px;
+    cursor: pointer;
+}
