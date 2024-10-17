@@ -1,3 +1,7 @@
+header h1{
+    max-width: 370px !important;
+}
+
 .quote{
     margin-top: 80px;
 }
@@ -48,7 +52,7 @@
     margin-top: 100px;
 }
 
-.team h1{
+.team > h1, .contact > h1{
     font-weight: 400;
     color: #242565;
     font-size: 30px;
@@ -133,4 +137,84 @@
     margin-inline: auto;
     margin-top: 80px;
     cursor: pointer;
+}
+
+/* Contact */
+
+.contact{
+    margin-top: 100px;
+}
+
+.contact-container{
+    display: flex;
+    width: 85%;
+    margin-inline: auto;
+    margin-top: 40px;
+}
+
+.contact-container .left, .contact-container .right{
+    width: 50%;
+}
+
+.contact-container h1{
+    font-weight: 500;
+    font-size: 16px;
+    color: #242565;
+    margin-bottom: 8px;
+}
+
+.contact-container p{
+    font-size: 13px;
+}
+
+.title{
+    font-size: 14px !important;
+    margin-top: 8px;
+}
+
+form{
+    display: block;
+    width: 100%;
+}
+
+.right input, textarea{
+    display: block;
+    width: calc(100% - 32px);
+    outline: none;
+    background: #FAFAFA;
+    border: 1px solid #F7F4FF;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form div input{
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.fname{
+    margin-right: 16px;
+}
+
+.submit{
+    color: white;
+    background: #242565;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 90px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
 }
