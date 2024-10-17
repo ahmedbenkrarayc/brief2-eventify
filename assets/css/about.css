@@ -1,0 +1,56 @@
+.quote{
+    margin-top: 80px;
+}
+
+.quote h1{
+    text-align: center;
+    font-weight: 400;
+    color: #242565;
+    font-size: 25px;
+    max-width: 790px;
+    margin-inline: auto;
+}
+
+.highlight{
+    color: #F5167E;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    background: #F6F6F9;
+    padding: 50px 100px;
+}
+
+.numcard{
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 40px 40px;
+    color: #242565;
+}
+
+.numcard h1{
+    text-align: center;
+}
+
+.numcard p{
+    text-align: center;
+    color: #6A6A6A;
+}
+
+/* team */
+
+.team{
+    margin-top: 100px;
+}
+
+.team h1{
+    font-weight: 400;
+    color: #242565;
+    font-size: 30px;
+    text-align: center;
+}
