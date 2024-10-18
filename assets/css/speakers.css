@@ -36,6 +36,7 @@
     background: white;
     padding: 40px 40px;
     color: #242565;
+    cursor: pointer;
 }
 
 .numcard h1{
@@ -124,4 +125,11 @@
     margin-inline: auto;
     margin-top: 80px;
     cursor: pointer;
+}
+
+.load:hover{
+    background: white;
+    color: #242565;
+    border: 1.5px solid #242565;
+    transition: all 300ms ease-in-out;
 }
