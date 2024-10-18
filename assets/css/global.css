@@ -82,6 +82,12 @@
     background: #F5167E;
 }
 
+.btn-container a:first-child:hover{
+    background: #f92789;
+    border-color: #f92789;
+    transition: all 300ms ease-in-out;
+}
+
 /* TOOOOOOOOOOOOOOPNAAAAAAAAAAAAAAAV */
 
 .topnav{
@@ -216,6 +222,12 @@ footer{
     font-size: 11px;
     padding: 12px 20px;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+.subscribe:hover{
+    background: #f92c8c;
+    transition: all 300ms ease-in-out;
 }
 
 .copyright{
