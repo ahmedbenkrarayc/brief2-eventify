@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .header{
     position: relative;
     width: 100%;
