@@ -107,6 +107,11 @@ form{
     cursor: pointer;
 }
 
+.login:hover{
+    background: #242565c9;
+    transition: background 300ms ease-in-out;
+}
+
 .notregistered{
     margin-top: 25px;
     text-align: center;
