@@ -6,6 +6,7 @@
     <title>Eventify | Login</title>
     <link rel="shortcut icon" href="./../assets/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./../assets/css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section class="container">
@@ -13,22 +14,22 @@
             <div class="form">
                 <a href="./index.html"><img class="logo" src="./../assets/images/darklogo.png" alt="logo"></a>
     
-                <h1>Login</h1>
-                <p class="description">Welcome Back! Enter Your Credentials Below</p>
+                <h1 data-aos="zoom-in">Login</h1>
+                <p data-aos="zoom-in" class="description">Welcome Back! Enter Your Credentials Below</p>
     
                 <form action="" method="post">
-                    <div class="inputbox">
+                    <div data-aos="zoom-in" class="inputbox">
                         <label for="email">Adress email</label>
                         <input type="email" id="email" placeholder="ahmed.benkrara12@gmail.com">
                     </div>
-                    <div class="inputbox">
+                    <div data-aos="zoom-in" class="inputbox">
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="Password">
                     </div>
 
-                    <a href="#" class="forgot">Forgot password</a>
+                    <a data-aos="zoom-in" href="#" class="forgot">Forgot password</a>
 
-                    <button class="login" type="submit">Login</button>
+                    <button data-aos="zoom-in" class="login" type="submit">Login</button>
                 </form>
 
                 <p class="notregistered">You don’t have an account yet? <a href="#">Sign Up</a></p>
@@ -36,5 +37,13 @@
         </div>
         <div class="right"></div>
     </section>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600
+        });
+    </script>
 </body>
 </html>
